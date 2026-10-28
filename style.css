@@ -1,0 +1,22 @@
+* {box-sizing:border-box}
+body {margin:0;background:#edf2f7;color:#172638;font-family:Arial,Helvetica,sans-serif;line-height:1.5}
+.container {max-width:860px;margin:30px auto;padding:28px;background:white;border-radius:14px;box-shadow:0 6px 30px #14293b18}
+h1 {text-align:center;font-size:1.7rem;color:#163c60}
+h2 {color:#173b59}
+.hidden {display:none!important}
+#registration {max-width:540px;margin:0 auto}
+#registration label {display:block;font-weight:bold;margin-top:16px}
+input[type=text], select {display:block;width:100%;padding:13px;margin:8px 0 14px;border:1px solid #bbc8d3;border-radius:8px;font-size:1rem}
+button {display:block;width:100%;padding:14px 18px;margin-top:22px;background:#145a85;color:white;border:0;border-radius:8px;font-size:1rem;font-weight:bold;cursor:pointer}
+button:hover {background:#0e4163}
+#timer {position:sticky;top:8px;z-index:5;text-align:center;background:#123456;color:white;padding:15px;border-radius:8px;font-size:1.4rem}
+#timer.warning {background:#b30000}
+.question {padding:18px 0;border-bottom:1px solid #d9e2eb}
+.question h3 {font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere}
+.option {display:flex;gap:10px;align-items:flex-start;padding:9px 10px;margin:6px 0;border-radius:7px;cursor:pointer;background:#f7f9fc}
+.option:hover {background:#e9f1fa}
+.option input {margin-top:4px;flex-shrink:0}
+.option span {white-space:pre-wrap;overflow-wrap:anywhere;font-family:inherit}
+#resultSection {text-align:center;padding:24px}
+#resultText {white-space:pre-line}
+@media(max-width:600px){.container{margin:10px;padding:16px}h1{font-size:1.35rem}}

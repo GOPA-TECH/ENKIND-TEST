@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Coding Examination Portal 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>STUDENT TEST PORTAL</h1>
+    <section id="registration">
+      <h2>Registration</h2>
+      <label for="studentName">Full name</label>
+      <input type="text" id="studentName" placeholder="Enter your full name" required>
+      <label for="studentClass">Class</label>
+      <select id="studentClass">
+        <option value="">Select Class</option>
+        <option>JSS 1</option><option>JSS 2</option><option>JSS 3</option>
+        <option>SSS 1</option><option>SSS 2</option><option>SSS 3</option>
+      </select>
+      <p><strong>Subject:</strong> Coding</p>
+      <button type="button" onclick="startExam()">Start Examination</button>
+    </section>
+    <section id="examSection" class="hidden">
+      <h2 id="examTitle"></h2>
+      <p id="studentInfo"></p>
+      <!-- Only ONE element has id="timer" -->
+      <h2 id="timer">Time Remaining: 10:00</h2>
+      <form id="examForm"></form>
+      <button type="button" onclick="submitExam()">Submit Examination</button>
+    </section>
+    <section id="resultSection" class="hidden">
+      <h2>Examination Submitted</h2>
+      <p id="resultText"></p>
+      <p id="saveStatus"></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
